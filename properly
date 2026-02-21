@@ -1,0 +1,43 @@
+[33mcommit 62c4634d0271a7420e33cb3fe7baa2f1b86f1e36[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: sudiksha-0A <sudikshachauhan0@gmail.com>
+Date:   Sat Feb 21 18:46:48 2026 +0530
+
+    functions
+
+[1mdiff --git a/JS/function.js b/JS/function.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e4ad9cc[m
+[1m--- /dev/null[m
+[1m+++ b/JS/function.js[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32mvar x = 1;[m
+[32m+[m[32ma();[m
+[32m+[m[32mb();[m
+[32m+[m[32mconsole.log(x) //output: 1 because x is a global variable and the x inside function a and b are local variables and they do not affect the global variable x[m
+[32m+[m
+[32m+[m[32mfunction a(){[m
+[32m+[m[32m    var x = 10; //scope of x is only inside function a and it does not affect the global variable x[m
+[32m+[m[32m    console.log(x)[m[41m [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfunction b(){[m
+[32m+[m[32m    var x = 100; //scope of x is only inside function a and it does not affect the global variable x[m
+[32m+[m[32m    console.log(x)[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/*[m
+[32m+[m[32mbehind the scenes JavaScript engine creates a global execution context and a call stack.[m
+[32m+[m[32mWhen the JavaScript engine starts executing the code, it creates a global execution context and pushes it onto the call stack.[m
+[32m+[m[32mWhen a function is called, a new execution context is created for that function and pushed onto the call stack.[m
+[32m+[m[32mWhen the function finishes executing, its execution context is popped off the call stack and control returns to the previous execution context.[m
+[32m+[m[32m*/[m
+\ No newline at end of file[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 76289fd..df42012 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1 +1 @@[m
+[31m-# WEB_Tech[m
+\ No newline at end of file[m
+[32m+[m[32m# WEB TECHNOLOGY[m
+\ No newline at end of file[m
