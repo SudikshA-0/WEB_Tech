@@ -14,6 +14,7 @@ Whenever we create any variable or function, it get attached to the global objec
 
 */
 
+
 var a = 10;
 function fun(){
     var x = 20;
@@ -21,6 +22,5 @@ function fun(){
 console.log(a)
 console.log(this.a) //output: 10 because a is a global variable and it is attached to the global object and we can access it using this keyword
 console.log(global.a) //output: 10 because a is a global variable and it is attached to the global object and we can access it using window keyword
-
 
 console.log(this.fun) //output: Prints the whole function because fun is a global function and it is attached to the global object and we can access it using this keyword
