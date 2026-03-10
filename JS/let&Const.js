@@ -22,7 +22,7 @@ const c = 30;
 
 this.b; // output 20 , as var can be accessed wuth this keyword. 
 this.a; // undefined, as let and const do not create properties on the global object (window in browsers), while var does.
-
+this.c; // undefined, as let and const do not create properties on the global object (window in browsers), while var does.
 
 
 // ------ Redeclaration of variables with var, let, and const ------ //
@@ -51,4 +51,11 @@ const o = 50;
 o = 60; // TypeError: Assignment to constant variable, as const does not allow reassignment of the variable.
 
 
+/*
+
+SUMMARY:
+ use const when you want to declare a variable that should not be reassigned, and use let when you need a variable that can be reassigned. 
+ Avoid using var to prevent issues with hoisting and redeclaration.
+
+*/
 
