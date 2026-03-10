@@ -36,7 +36,7 @@ console.log(add1(10,20));
 const square = x => {
     return x*x;
 }
-square(89);  
+  
 console.log(square(89));   
 
 // Multiple parameters
@@ -44,14 +44,13 @@ console.log(square(89));
 const product =(a,b) => {
     return a*b;
 }
-product(10,20);
+
 console.log(product(10,20));
 
 // No parameters
 
-const greet = ()=>{
-    console.log("Hello");
-}
+const greet = ()=> console.log("Hello");
+
 greet();
 
 
@@ -62,8 +61,7 @@ greet();
 const sum = (a,b) =>{
     return a+b;
 }
-add(10,50);
-console.log(add(10,50));
+console.log(sum(10,50));
 
 // Arrow function with implicit return
 
@@ -101,6 +99,8 @@ const details =() =>({
     Sec : "D"
 })
 console.log(details());
+console.log(details().Sec);
+
 
 
 //Example 4
@@ -110,6 +110,7 @@ const createuser =(name , age)=>({
     age : age
 })
 console.log(createuser("sudiksha",20))
+console.log(createuser().age)//undefined because we are not passing any argument to the function and it is trying to access the age property of undefined.
 
 
 
